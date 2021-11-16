@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/script.js" type="module"></script>
+    <title>Bienes Raices</title>
+</head>
+
+<body>
+    <header class="navegacion">
+        <img src="./images/logo.png" height="80px" alt="logo-autos">
+        <nav class="itemsNav">
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Anuncio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <hr>
+        <div class="inicioPrincipal">
+            <h2>Administración</h2>
+            <img src="./images/autosgral.png" height="150px" alt="Administración" id="imagenPrincipal">
+        </div>
+        <form action="" class="formulario">
+            <fieldset>
+                <legend>Informacion del Anuncio</legend>
+
+                <h3>TITULO</h3>
+                <input type="text" class="longTextBox" name="titulo" placeholder="Titulo" id="titulo" autocomplete="off"
+                    required>
+
+                <h3>TRANSACCION</h3>
+                <div>
+                    VENTA <input type="checkbox" name="transaccion" value="venta" id="venta" autocomplete="off" checked>
+                </div>
+                <div>
+                    ALQUILER <input type="checkbox" name="transaccion" value="alquiler" autocomplete="off" id="alquiler">
+                </div>
+                <h3>DESCRIPCION</h3>
+                <input type="text" name="descripcion" placeholder="Descripcion" id="descripcion" autocomplete="off"
+                    required>
+
+                <h3>PRECIO</h3>
+                <input type="number" name="precio" step="0.01" placeholder="Precio" id="precio" autocomplete="off"
+                    required>
+                <div>
+                    <img src="./images/puerta.png.png" height="100%" width="35px" alt="puerta-autos">
+                    <input type="number" name="puerta" placeholder="Puertas" id="puerta" autocomplete="off" required>
+                </div>
+                <div>
+                    <img src="./images/km.png.png" height="100%" width="35px" alt="km-autos">
+                    <input type="number" name="km" placeholder="Kms" id="km" autocomplete="off" required>
+                </div>
+                <div>
+                    <img src="./images/velocidad.png.png" height="100%" width="35px" alt="potencia-autos">
+                    <input type="number" name="potencia" placeholder="Potencia" id="potencia" autocomplete="off"
+                        required>
+                </div>
+            </fieldset>
+            <div>
+                <div class="btnGuardar">
+                    <img src="./images/disquete.png" height="100%" width="35px">
+                    <input type="submit" class="submit" value="Guardar">
+                </div>
+                <input type="button" class="oculto" value="Eliminar" id="btnDelete">
+                <input type="button" class="oculto" value="Cancelar" id="btnCancelar">
+                <input type="hidden" name="txtId">
+            </div>
+            <div id="spinner-container"></div>
+            <div id="divTabla"  ></div>
+        </form>
+    </main>
+    <footer>
+        <nav>
+            <a href="#">Nosotros</a>
+            <a href="#">Anuncio</a>
+            <a href="#">Blog</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <p>Todos los derechos reservados <date>2021</date>&copy;</p>
+    </footer>
+</body>
+
+</html>
