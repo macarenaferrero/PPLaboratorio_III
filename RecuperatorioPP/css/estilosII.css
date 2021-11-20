@@ -1,14 +1,14 @@
 body {
   border: 1px solid rgba(128, 128, 128, 0.753);
   padding: 10px;
-  background-image: url("./images/fondo.jpg");
+  background-image: url("/images/fondo.jpg");
 }
 
 ul li::marker{
   display: none !important;
 }
 
-.navegacion {
+.navegacion{
   background-color: rgb(20, 132, 180);
   display: flex;
   flex-direction: row;
@@ -16,8 +16,10 @@ ul li::marker{
   align-items: center;
   height: 100px;
   padding: 20px;
-  text-align: center;
-  flex-direction: column;
+  background-position: center;
+  image-rendering: optimizeSpeed;
+  
+  
 }
 
 

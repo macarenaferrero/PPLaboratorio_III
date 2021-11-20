@@ -1,4 +1,4 @@
-import { crearPublicidad } from "./dinamicas";
+import { crearPublicidad } from "./dinamicas.js";
 
 const $divTabla = document.getElementById("divTabla");
 const anuncios = JSON.parse(localStorage.getItem("anuncios")) || [];

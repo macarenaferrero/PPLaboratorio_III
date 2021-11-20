@@ -8,7 +8,7 @@ const anuncios = JSON.parse(localStorage.getItem("anuncios")) || [];
 console.log(anuncios);
 actualizarTabla();
 
-window.addEventListener("Click", (e) => {
+window.addEventListener("click", (e) => {
  
     if (e.target.matches("td")) {
         console.log(e.target.parentElement.dataset.id);
@@ -67,14 +67,6 @@ $formulario.addEventListener("submit", (e) => {
     $formulario.reset();
 })
 
-/*function Transaccion(transaccion) {
-    if(transaccion.value == "venta")
-    {
-        transaccionAux = "venta";
-    }else{
-        transaccionAux = "alquiler";
-    }
-}*/
 
 
 function actualizarTabla() {
@@ -91,7 +83,7 @@ function actualizarTabla() {
 
 
 const handlerCrear = (nuevoAnuncio) => {
-    alert("Hola");
+    alert("Creando anuncio");
     anuncios.push(nuevoAnuncio);
     actualizarStorage(anuncios);
     agregarSpinner();
@@ -109,7 +101,8 @@ const handlerEditar = (editarAnuncio) => {
 
     if (confirm("Confirma modificacion?")) {
 
-        anuncios.splice(indice, 1, editarAnuncio);
+        anuncios.splice(indice, 1);
+        anuncios.push(editarAnuncio);
         actualizarStorage(anuncios);
         agregarSpinner();
         setTimeout(() => {

@@ -53,9 +53,7 @@ export const crearTabla = (data)=>{
 export const crearPublicidad = (data)=>{
 
     const $principal = document.getElementById("principal");
-
     data.forEach((element, index) => {
-        console.log("entre");
         const $article = document.createElement("article");
         $article.classList.add("article");
 
@@ -69,7 +67,7 @@ export const crearPublicidad = (data)=>{
         $descripcion.textContent = element.descripcion;
         $article.appendChild($descripcion);
 
-        const $precio = document.createElement("p");
+       const $precio = document.createElement("p");
         $precio.classList.add("precio");
         $precio.textContent = element.precio;
         $article.appendChild($precio);
@@ -77,7 +75,7 @@ export const crearPublicidad = (data)=>{
         const $ul = document.createElement("ul");
         const $lista = document.createElement("li");
         const $imagenPuerta = document.createElement("img");        
-        $imagenPuerta.setAttribute("src", "./puerta.png.png");
+        $imagenPuerta.setAttribute("src", "./images/puerta.png.png");
         $imagenPuerta.setAttribute("width", "25px");
         $imagenPuerta.setAttribute("alt", "puertas");
         $imagenPuerta.classList.add("iconos");
@@ -92,7 +90,7 @@ export const crearPublicidad = (data)=>{
         $ul.appendChild($lista);
         const $listaII = document.createElement("li");
         const $imagenKm = document.createElement("img");
-        $imagenKm.setAttribute("src", "./km.png.png");
+        $imagenKm.setAttribute("src", "./images/km.png.png");
         $imagenKm.setAttribute("width", "25px");        
         $imagenKm.setAttribute("alt", "km");
         $imagenKm.classList.add("iconos");
@@ -106,7 +104,7 @@ export const crearPublicidad = (data)=>{
         $ul.appendChild($listaII);
         const $listaIII = document.createElement("li");
         const $imagenPotencia = document.createElement("img");
-        $imagenPotencia.setAttribute("src", "./velocidad.png.png");
+        $imagenPotencia.setAttribute("src", "./images/velocidad.png.png");
         $imagenPotencia.setAttribute("width", "25px");
         $imagenPotencia.setAttribute("alt", "potencia");
         $imagenPotencia.classList.add("iconos");
